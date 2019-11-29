@@ -1,3 +1,5 @@
+package Geometry;
+
 public class Geom3D {
     // distance from point (x, y, z) to plane aX + bY + cZ + d = 0
     public static double ptPlaneDist(double x, double y, double z,
