@@ -1,6 +1,14 @@
 import Math.Gauss;
 
 public class Main {
+
+    private static void InitializeMatrix(double[][] matrix, int nrow, int ncol){
+        for(int i = 0; i < nrow; i ++){
+            for(int j = 0; j < ncol; j ++)
+                matrix[i][j] = 10;
+        }
+    }
+
     private static void PrintMatrix(double[][] matrix, int nrow, int ncol){
         for(int i = 0; i < nrow; i ++){
             for(int j = 0; j < ncol; j ++){
@@ -13,16 +21,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, world");
         Gauss gauss = new Gauss();
-        int nrow = 3;
-        int ncol = 3;
-
-        double[][] matrix = new double[3][3];
-        for(int i = 0; i < nrow; i ++){
-            for(int j = 0; j < ncol; j ++)
-                matrix[i][j] = 10;
-        }
-        PrintMatrix(matrix, 3, 3);
+        int nrow = 4;
+        int ncol = 4;
+        double[][] matrix = new double[nrow][ncol];
+        InitializeMatrix(matrix, nrow, ncol);
+        PrintMatrix(matrix, nrow, ncol);
         gauss.doGauss(matrix);
-        PrintMatrix(matrix, 3, 3);
+        PrintMatrix(matrix, nrow, ncol);
     }
 }
