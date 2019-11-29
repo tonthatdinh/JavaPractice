@@ -1,4 +1,5 @@
 import Math.Gauss;
+import Graph.*;
 
 public class Main {
 
@@ -20,6 +21,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello, world");
+        /**
+         * Test Gaussian Elimination
+         */
         Gauss gauss = new Gauss();
         int nrow = 4;
         int ncol = 4;
@@ -28,5 +32,15 @@ public class Main {
         PrintMatrix(matrix, nrow, ncol);
         gauss.doGauss(matrix);
         PrintMatrix(matrix, nrow, ncol);
+
+        /**
+         * Test Graph packages
+         */
+        Graph graph = new Graph();
+        graph.setNumVertice(3);
+        graph.setNumEdege(5);
+
+        System.out.println(graph.getNumVertice());
+        System.out.println(graph.getNumEdege());
     }
 }

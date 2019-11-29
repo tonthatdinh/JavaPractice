@@ -1,5 +1,12 @@
 package Math;
 
+/**
+ * This class implemented gaussian Elimination Process
+ * Input: a matrix with size m x n
+ * Output: a matrix with size m x n after apply Gaussian Elimination Process
+ * Time Complexity: O(n^3)
+ */
+
 public class Gauss {
     final double eps = 1e-9;
 
