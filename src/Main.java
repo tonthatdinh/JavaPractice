@@ -1,5 +1,6 @@
 import Math.Gauss;
 import Graph.*;
+import DataStructure.*;
 
 public class Main {
 
@@ -36,11 +37,12 @@ public class Main {
         /**
          * Test Graph packages
          */
-        Graph graph = new Graph();
-        graph.setNumVertice(3);
-        graph.setNumEdege(5);
+//        Graph graph = new Graph();
+//        graph.setNumVertice(3);
+//        graph.setNumEdege(5);
+        Heap heap = new Heap();
+        System.out.println(heap.isEmpty());
+//        System.out.println(heap.findMax());
 
-        System.out.println(graph.getNumVertice());
-        System.out.println(graph.getNumEdege());
     }
 }
