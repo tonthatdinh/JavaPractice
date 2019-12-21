@@ -1,6 +1,27 @@
 # practice-java
 
+## Arrays
 
+```java
+package com.company;
+
+public class Arrays {
+    // Overview: This class provides a number of standalone procedure that
+    // are useful for manipulating arrays of ints.
+
+    public static int search(int[] a, int x){
+        //Effects: If x is in a, return an index where x is stored;
+        //otherwise, return -1.
+        if (a == null) return -1;
+        for(int i = 0; i < a.length; i ++)
+            if (a[i] == x) return i;
+        return -1;
+    }
+
+
+}
+
+```
 ## Quick Sort
 
 ```java
