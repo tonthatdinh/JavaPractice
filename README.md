@@ -1,5 +1,41 @@
 # practice-java
+## ArrayList
+```java
+package com.company;
 
+public class MyArrayList {
+    private Object[] mData = new Object[0];
+
+    public void add(Object object){
+        Object[] newData = new Object[mData.length + 1];
+        for(int i = 0; i < mData.length; i ++){
+            newData[i] = mData[i];
+        }
+        newData[mData.length] = object;
+        mData = newData;
+    }
+
+    public Object get(int k){
+        return mData[k];
+    }
+
+    public void printAll(){
+        for(int i = 0; i < mData.length; i ++)
+            System.out.print(mData[i] + " ");
+        System.out.println("\n");
+    }
+    public static void main(String[] args){
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add(new Integer(4));
+        myArrayList.printAll();
+        myArrayList.add(5);
+        myArrayList.add(6);
+        myArrayList.printAll();
+
+    }
+}
+
+```
 ## Arrays
 
 ```java
